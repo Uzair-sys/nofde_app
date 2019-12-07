@@ -3,6 +3,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const Sequelize = require('sequelize');
+const passport = require ('passport');
+const joi = require ('joi');
+// const expressValidator = require('express-validator');
+// const localstrategy = require('passport-local').Strategy;
 
 // Option 1: Passing parameters separately
 const db = require('./config/db');

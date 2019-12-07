@@ -23,6 +23,29 @@ id: { type: Sequelize.INTEGER, autoIncrement: true, primaryKey: true},
 		field:'year',
 	},
 
+	email:
+	{
+		type:Sequelize.STRING,
+		allowNull: false,
+		field:'email',
+
+	},
+
+		password:
+	{
+		type:Sequelize.STRING,
+		allowNull: false,
+		field:'password',
+
+	},
+	// facebook: {
+	// 	id: String,
+	// 	token: String,
+	// 	email: String,
+	// 	name: String
+	//   },
+
+
 
 	},{timestamps: false})
 module.exports=User;
